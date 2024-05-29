@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-data-rdbms-example
+  datasource:
+    url: jdbc:postgresql://localhost:5432/employees
+    username: postgres
+    password: somepassword
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
